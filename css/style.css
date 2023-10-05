@@ -71,10 +71,21 @@ img {
 
 .navigation-link {
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #404bbf;
   font-weight: 500;
   padding: 24px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-link::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 address {
@@ -100,6 +111,7 @@ address {
 .contact {
   color: #434455;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover {
