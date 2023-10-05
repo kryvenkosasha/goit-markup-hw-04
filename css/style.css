@@ -191,6 +191,17 @@ address {
   padding: 120px 0;
 }
 
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8E8F99;
+  margin-bottom: 8px;
+}
+
 .descr-list {
   display: flex;
   gap: 24px;
