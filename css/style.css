@@ -291,6 +291,7 @@ address {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .soc-link-item {
@@ -313,7 +314,7 @@ address {
   background-color: #404bbf;
 }
 
-.soc-links-svg{
+.soc-links-svg {
   fill: #f4f4fd;
 }
 
@@ -342,6 +343,36 @@ address {
   width: calc((100% - 48px) / 3);
 }
 
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover .portfolio-anim-text {
+  transform: translateY(0%);
+}
+
+.portfolio-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-anim-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .app-name {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -366,6 +397,15 @@ address {
   padding: 100px 0;
 }
 
+.footer-div {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-p-container {
+  margin-right: 120px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -387,4 +427,43 @@ address {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.soc-links-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-soc-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-link-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-icons{
+  fill: #f4f4fd;
 }
