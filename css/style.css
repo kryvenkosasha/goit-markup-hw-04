@@ -70,16 +70,23 @@ img {
   align-items: center;
 }
 
+
+
 .navigation-link {
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   font-weight: 500;
   padding: 24px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link::after {
+.current{
+  color: #404bbf;
+  position: relative;
+}
+
+.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -87,6 +94,7 @@ img {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  width: 100%;
 }
 
 address {
@@ -154,6 +162,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .preview-text {
